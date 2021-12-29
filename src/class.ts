@@ -1,3 +1,4 @@
+export {};
 enum School {
   junior = 'junior',
   juniorHigh = 'juniorHigh',

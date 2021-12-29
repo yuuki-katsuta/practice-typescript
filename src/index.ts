@@ -1,3 +1,11 @@
+import { MyData } from './lib';
+
+const myData = new MyData();
+myData.add('taro', 34);
+myData.add('hana', 22);
+
+myData.print();
+
 let table: HTMLTableElement;
 let message: HTMLInputElement;
 
@@ -61,11 +69,11 @@ class MemoData {
 
 const memo = new MemoData();
 
-window.addEventListener('load', () => {
-  table = document.querySelector('#table');
-  message = document.querySelector('#message');
-  document.querySelector('#btn').addEventListener('click', doAction);
-  document.querySelector('#initial').addEventListener('click', doInitial);
-  memo.load();
-  showTable(memo.getHtml());
-});
+// window.addEventListener('load', () => {
+//   table = document.querySelector('#table');
+//   message = document.querySelector('#message');
+//   document.querySelector('#btn').addEventListener('click', doAction);
+//   document.querySelector('#initial').addEventListener('click', doInitial);
+//   memo.load();
+//   showTable(memo.getHtml());
+// });
